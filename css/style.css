@@ -29,7 +29,7 @@ body > *:before, body > *:after{
 }
 .page-container{
     flex: 0 0 70%;
-    min-width: 500px;
+    min-width: 600px;
     padding: 0 10px;
 }
 /* end of Responsive Page ruleset */
@@ -47,6 +47,7 @@ a:hover{
 /* HEADER  */
 header{
     position: fixed;
+    top: 0;
 
     height: 4em;
 
@@ -78,4 +79,42 @@ header div:last-child *{
 /* Logo  */
 header img{
     height: 50%;
+}
+
+/* MAIN  */
+main{
+    margin-top: 4em;
+}
+
+#shop{
+    padding: 2em 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    flex: 0 0 30%;
+    min-width: 250px;
+}
+.item img{
+    width: 100%;
+}
+.item .brand{
+    display: block;
+
+    font-size: large;
+}
+.item .name{
+    display: block;
+
+    font-size: x-large;
+    font-weight: bold;
+}
+.item .price{
+    font-size: large;
+    font-weight: bold;
+    color: red;
+}
+.item .original-price{
+    text-decoration: line-through;
 }
