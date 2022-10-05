@@ -138,10 +138,14 @@ main{
     color: white;
 }
 .item .tags span{
+    display: none;
+
     padding: 0.1em 0.6em;
+    margin-right: 2px;
 }
 
-.item .discount{
+.item.discounted .discount{
+    display: inline;
     background-color: red;
 }
 .item .discount::before{
@@ -149,4 +153,9 @@ main{
 }
 .item .discount::after{
     content: "%";
+}
+
+.item.sustainable .sustainability{
+    display: inline;
+    background-color: green;
 }
