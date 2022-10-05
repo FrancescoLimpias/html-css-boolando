@@ -29,7 +29,7 @@ body > *:before, body > *:after{
 }
 .page-container{
     flex: 0 0 70%;
-    min-width: 600px;
+    min-width: 500px;
     padding: 0 10px;
 }
 /* end of Responsive Page ruleset */
@@ -50,7 +50,7 @@ header{
     z-index: 800;
     top: 0;
 
-    height: 5em;
+    height: 4em;
 
     color: white;
     font-size: large;
@@ -82,9 +82,11 @@ header img{
     height: 50%;
 }
 
+
+
 /* MAIN  */
 main{
-    margin-top: 5em;
+    margin-top: 4em;
 }
 
 #shop{
@@ -92,7 +94,7 @@ main{
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* Items  */
@@ -100,7 +102,7 @@ main{
     position: relative;
 
     flex: 0 0 30%;
-    min-width: 250px;
+    min-width: 220px;
 
     font-size: large;
 
@@ -163,3 +165,52 @@ main{
     display: inline;
     background-color: green;
 }
+
+
+
+/* FOOTER  */
+footer{
+    height: 6em;
+    color: white;
+    font-size: large;
+
+    background-color: #1a1a1a;
+}
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Terms */
+#terms{
+    flex: 0 0 65%;
+}
+#terms span{
+    display: block;
+    font-weight: bold;
+}
+#terms div{
+    display: flex;
+    flex-wrap: wrap;
+}
+#terms div a{
+    font-size: medium;
+    margin-right: 1em;
+}
+
+/* Follow Us */
+#follow-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#follow-us span{
+    display: block;
+    font-weight: 600;
+}
+#follow-us i{
+    font-size: x-large;
+}
+
