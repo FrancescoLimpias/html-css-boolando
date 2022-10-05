@@ -6,6 +6,9 @@
     /* Testing Mode  */
     /* border: 1px dashed orange; */
 }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 
 /*  Responsive Page ruleset
 
@@ -27,15 +30,48 @@ body > *:before, body > *:after{
 .page-container{
     flex: 0 0 70%;
     min-width: 500px;
+    padding: 0 10px;
 }
 /* end of Responsive Page ruleset */
+
+/* COMMON  */
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+a:hover{
+    text-shadow: 0 0 2px white;
+}
 
 
 /* HEADER  */
 header{
     position: fixed;
 
-    height: 3em;
+    height: 4em;
+
+    color: white;
+    font-size: medium;
+    font-weight: bold;
 
     background-color: orangered;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.507);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+}
+header div:first-child *{
+    margin-right: 0.5em;
+}
+header div:last-child *{
+    margin-left: 0.5em;
+}
+header img{
+    height: 50%;
 }
