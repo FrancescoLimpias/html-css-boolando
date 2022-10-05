@@ -92,17 +92,23 @@ main{
     display: flex;
     justify-content: space-between;
 }
+
+/* Items  */
 .item{
+    position: relative;
+
     flex: 0 0 30%;
     min-width: 250px;
+
+    font-size: large;
 }
+
+/* Static Contents  */
 .item img{
     width: 100%;
 }
 .item .brand{
     display: block;
-
-    font-size: large;
 }
 .item .name{
     display: block;
@@ -111,10 +117,36 @@ main{
     font-weight: bold;
 }
 .item .price{
-    font-size: large;
     font-weight: bold;
     color: red;
 }
 .item .original-price{
+    display: none;
     text-decoration: line-through;
+}
+.item.discounted .original-price{
+    display: inline;
+}
+
+/* Absolute Contents  */
+.item .tags{
+    position: absolute;
+    left: 0px;
+    bottom: 7em;
+    
+    font-size: medium;
+    color: white;
+}
+.item .tags span{
+    padding: 0.1em 0.6em;
+}
+
+.item .discount{
+    background-color: red;
+}
+.item .discount::before{
+    content: "-";
+}
+.item .discount::after{
+    content: "%";
 }
