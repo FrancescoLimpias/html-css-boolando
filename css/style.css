@@ -62,16 +62,20 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
+/* Lateral Containers  */
 header div{
     display: flex;
     justify-content: space-between;
 }
+/* Shop Categories  */
 header div:first-child *{
     margin-right: 0.5em;
 }
+/* Personal Sections  */
 header div:last-child *{
     margin-left: 0.5em;
 }
+/* Logo  */
 header img{
     height: 50%;
 }
