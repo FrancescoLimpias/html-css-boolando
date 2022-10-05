@@ -1,0 +1,8 @@
+/* GENERAL SETUP  */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+    /* Testing Mode  */
+    /* border: 1px dashed orange; */
+}
