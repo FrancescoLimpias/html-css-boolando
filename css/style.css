@@ -107,11 +107,36 @@ main{
     font-size: large;
 
     margin: 2em 0;
+    transition: box-shadow 1s ease 0s;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.226);
+}
+.item:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.322);
 }
 
 /* Static Contents  */
+/* images */
+.item div:first-child{
+    width: 100%;
+}
 .item img{
     width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.far-view{
+    display: none;
+}
+.item:hover .close-up{
+    display: none;
+}
+.item:hover .far-view{
+    display: block;
+}
+
+/* descriptions */
+.item div:nth-child(2){
+    padding: 0 1em 0.2em;
 }
 .item .brand{
     display: block;
@@ -137,7 +162,7 @@ main{
 /* Absolute Contents  */
 .item .tags{
     position: absolute;
-    left: 0px;
+    left: -1px;
     bottom: 7em;
     
     font-size: medium;
@@ -147,7 +172,10 @@ main{
     display: none;
 
     padding: 0.1em 0.6em;
-    margin-right: 2px;
+    margin-left: 5px;
+    border-radius: 5px;
+
+    box-shadow: 0 1px 1px 1px rgba(128, 128, 128, 0.253);
 }
 
 .item.discounted .discount{
@@ -164,6 +192,20 @@ main{
 .item.sustainable .sustainability{
     display: inline;
     background-color: green;
+}
+
+.item i{
+    position: absolute;
+    top: 5em;
+    right: -3px;
+
+    background-color: white;
+    padding: 15px;
+    box-shadow: -1px 0 3px rgba(0, 0, 0, 0.473);
+}
+.item i:hover{
+    text-shadow: 0 0 4px gray;
+    color:orangered;
 }
 
 
@@ -197,6 +239,10 @@ footer > div{
 #terms div a{
     font-size: medium;
     margin-right: 1em;
+}
+#terms div a:hover{
+    text-shadow:none;
+    text-decoration: underline;
 }
 
 /* Follow Us */
